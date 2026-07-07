@@ -1,0 +1,39 @@
+name: Scheduled Auto Publish
+
+on:
+  schedule:
+    # 00:00 UTC = 09:00 AM KST
+    # Runs on Tuesdays (2) and Thursdays (4)
+    - cron: '0 0 * * 2,4'
+  workflow_dispatch: # Allows manual trigger via GitHub Web UI
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run Publish Script
+        run: node scripts/publish.js
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          if [ -n "$(git status --porcelain)" ]; then
+            git add .
+            git commit -m "Auto-publish: Scheduled Tuesday/Thursday post release"
+            git push origin main
+            echo "Changes pushed successfully."
+          else
+            echo "No new draft was published or no changes made."
+          fi

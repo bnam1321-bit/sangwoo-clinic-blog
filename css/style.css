@@ -474,6 +474,9 @@ h1, h2, h3, h4, h5, h6 {
 .card-header-gradient-6 {
   background: linear-gradient(135deg, #881337 0%, #db2777 100%);
 }
+.card-header-gradient-7 {
+  background: linear-gradient(135deg, #065f46 0%, #10b981 100%);
+}
 
 .card-header::after {
   content: '';
@@ -540,6 +543,7 @@ h1, h2, h3, h4, h5, h6 {
 .post-card:hover .card-header-gradient-4 .card-icon { color: #ea580c; }
 .post-card:hover .card-header-gradient-5 .card-icon { color: #312e81; }
 .post-card:hover .card-header-gradient-6 .card-icon { color: #881337; }
+.post-card:hover .card-header-gradient-7 .card-icon { color: #065f46; }
 
 /* Micro-animations keyframes for hover states */
 @keyframes pulse-heart {
@@ -598,6 +602,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .post-card:hover .card-header-gradient-6 .card-icon i {
   animation: wiggle-apple 1.2s ease-in-out infinite;
+}
+
+.post-card:hover .card-header-gradient-7 .card-icon i {
+  animation: pulse-heart 1.2s infinite;
 }
 
 .card-title-link h2 {

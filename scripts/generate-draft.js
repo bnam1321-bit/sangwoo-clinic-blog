@@ -84,7 +84,7 @@ filename: ${filename}
       <article class="blog-post-content">
         <div class="post-meta">
           <span class="post-category-tag">${category.badge}</span>
-          <span class="post-publish-date">작성일: <span id="publish-date">auto</span></span>
+          <span class="post-publish-date">작성일: <span id="publish-date">PUBLISH_DATE</span></span>
         </div>
         
         <h1 class="post-detail-title">[여기에 매력적인 포스트 제목 작성]</h1>

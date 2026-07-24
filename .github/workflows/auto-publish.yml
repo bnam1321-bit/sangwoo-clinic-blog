@@ -21,6 +21,14 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Generate New Draft (AI)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/generate-draft.js
+
       - name: Run Publish Script
         run: node scripts/publish.js
 

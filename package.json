@@ -1,0 +1,23 @@
+{
+  "name": "sangwoo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bnam1321-bit/sangwoo-clinic-blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bnam1321-bit/sangwoo-clinic-blog/issues"
+  },
+  "homepage": "https://github.com/bnam1321-bit/sangwoo-clinic-blog#readme",
+  "description": "",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1"
+  }
+}

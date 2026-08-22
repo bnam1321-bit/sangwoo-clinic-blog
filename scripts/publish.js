@@ -45,7 +45,7 @@ if (!metadataMatch) {
   process.exit(1);
 }
 
-metadata.title = metadataMatch[1].trim();
+metadata.title = metadataMatch[1].trim().replace(/\s*\|\s*상우내과의원\s*$/, '');
 metadata.excerpt = metadataMatch[2].trim();
 metadata.category = metadataMatch[3].trim();
 metadata.badge = metadataMatch[4].trim();

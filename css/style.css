@@ -1027,6 +1027,37 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
+/* Certificate Showcase Style */
+.certificate-showcase {
+  text-align: center;
+  margin: 36px 0;
+  padding: 24px;
+  background: #f8fafc;
+  border-radius: var(--radius-md);
+  border: 1px solid #e2e8f0;
+}
+
+.certificate-showcase img {
+  max-width: 520px;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #cbd5e1;
+  transition: transform 0.3s ease;
+}
+
+.certificate-showcase img:hover {
+  transform: scale(1.02);
+}
+
+.certificate-caption {
+  margin-top: 14px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #475569;
+}
+
 /* Callout Box Style */
 .post-callout {
   background: #f1f5f9;

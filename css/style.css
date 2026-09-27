@@ -1058,6 +1058,72 @@ h1, h2, h3, h4, h5, h6 {
   color: #475569;
 }
 
+/* Certificate Digital Badge Card Style */
+.certificate-badge-card {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.06);
+  padding: 24px 28px;
+  margin: 20px auto 36px;
+  max-width: 580px;
+  text-align: left;
+}
+
+.certificate-badge-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.certificate-badge-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #fef08a 0%, #eab308 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #713f12;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 12px rgba(234, 179, 8, 0.25);
+  flex-shrink: 0;
+}
+
+.certificate-badge-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--color-brand-dark);
+  margin-bottom: 4px;
+}
+
+.certificate-badge-sub {
+  font-size: 0.85rem;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.certificate-badge-grid {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  row-gap: 8px;
+  column-gap: 12px;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.certificate-badge-label {
+  font-weight: 700;
+  color: #475569;
+}
+
+.certificate-badge-value {
+  color: #0f172a;
+}
+
 /* Callout Box Style */
 .post-callout {
   background: #f1f5f9;

@@ -55,7 +55,8 @@ metadata.filename = metadataMatch[7].trim();
 
 console.log("Target Draft Metadata:", metadata);
 
-// 4. Update the draft file content (replace PUBLISH_DATE placeholder and sanitize markdown bold)
+// 4. Update the draft file content (replace PUBLISH_DATE placeholder everywhere and sanitize markdown bold)
+draftContent = draftContent.replace(/PUBLISH_DATE/g, todayStr);
 draftContent = draftContent.replace(/<span id="publish-date">.*?<\/span>/, `<span id="publish-date">${todayStr}</span>`);
 draftContent = draftContent.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
 
@@ -119,8 +120,9 @@ const rebuildSidebars = () => {
     const title = titleMatch ? titleMatch[1].trim() : "건강 정보";
     
     // Get date
-    const dateMatch = content.match(/<span class="post-publish-date">작성일:\s*(.*?)<\/span>/);
-    const date = dateMatch ? dateMatch[1].trim() : "2026-06-30";
+    const dateMatch = content.match(/<span class="post-publish-date">[\s\S]*?<span id="publish-date">(.*?)<\/span>/) || content.match(/<span class="post-publish-date">작성일:\s*(.*?)<\/span>/);
+    let date = dateMatch ? dateMatch[1].replace(/<[^>]+>/g, '').trim() : "2026-06-30";
+    if (!date || date.length < 10) date = "2026-06-30";
     
     return {
       filename,

@@ -254,39 +254,43 @@ const prompt = `
 - 주제: ${selected.topic}
 - 핵심 의학 키워드 및 포함할 내용: ${selected.keyPoints}
 
-# 필수 작성 가이드라인 (매우 중요 - 품질 및 분량 보장)
-1. **풍부한 분량과 깊이 있는 전문성**:
-   - 총 한글 글자수 **2,000자 ~ 3,000자 내외**의 매우 충실하고 상세한 의학 원고여야 합니다.
-   - 피상적인 한두 문장 요약은 절대 금지하며, 각 단락마다 **병태생리 기전(왜 이런 현상이 일어나는지), 구체적 수치 기준(검사 수치, 목표치), 실생활 적용 수칙**을 명확하고 깊이 있게 서술하세요.
-2. **구조화된 5개 이상의 대주제 (\`<h2>\`) 및 소주제 (\`<h3>\`)**:
+# 필수 작성 가이드라인 (최우선: GEO 로컬 검색 1순위 최적화 & 임상 품질)
+1. GEO(지역 검색 최적화) 최우선 원칙 (매우 중요):
+   - 본 블로그의 1순위 목적은 인천 계양구, 계산동, 계산역 및 인근 작전동, 효성동, 임학동 주민 대상의 네이버/구글 로컬 검색 최상위 노출입니다.
+   - METADATA의 title 및 \`<h1 class="post-detail-title">\`은 반드시 "[지역명: 계양구/계산동/계산역] [핵심 의학 주제 및 질환] - [상세 설명]" 형식으로 지역명을 반드시 첫 머리에 포함하세요. (예: "계양구 계산동 당뇨 초기증상과 당화혈색소 조절", "계산역 인공신장실 혈액투석 건조체중 관리").
+   - METADATA title 끝에 ' | 상우내과의원'을 붙이지 마세요. 순수 포스트 제목만 적으세요.
+   - 5번 대주제 본문에서 인천 계산역 4번 출구 앞 60m 계산메디칼센타 2~3층 위치, 주차 안내, 계양구 전역 및 부평구 삼산동 진료 생활권을 자연스럽고 신뢰감 있게 언급하세요.
+2. 풍부한 분량과 깊이 있는 전문성:
+   - 총 한글 글자수 2,000자 ~ 3,000자 내외의 매우 충실하고 상세한 의학 원고여야 합니다.
+   - 피상적인 한두 문장 요약은 절대 금지하며, 각 단락마다 병태생리 기전(왜 이런 현상이 일어나는지), 구체적 수치 기준(검사 수치, 목표치), 실생활 적용 수칙을 명확하고 깊이 있게 서술하세요.
+3. 구조화된 5개 이상의 대주제 (\`<h2>\`) 및 소주제 (\`<h3>\`):
    - 1. 질환/상태의 정의 및 병태생리적 발생 기전
    - 2. 주요 증상 및 놓치기 쉬운 조기 위험 신호
    - 3. 정확한 감별을 위한 의학적 검사 및 진단 기준 (수치 포함)
    - 4. 단계별 치료 전략 및 일상 속 핵심 관리 수칙
-   - 5. 상우내과의원의 특화된 임상 역량 및 정기 관리의 중요성
-3. **필수 시각화 및 정보 요소 포함 (HTML 태그 필수 사용)**:
-   - **비교 분석 표 (\`<table class="post-table">\`)**: 최소 3~5행 이상의 표로 증상 비교, 검사 수치 기준, 단계별 차이, 또는 식이요법 권장/제한 식품표를 반드시 구성할 것 (\`<thead>\`, \`<tbody>\` 구조 준수).
-   - **전문 학회 가이드라인 콜아웃 (\`<div class="post-callout">\`)**: 대한신장학회(KSN), 대한소화기내시경학회, 대한당뇨병학회 등의 최신 임상 지침이나 통계 수치를 강조 박스로 삽입할 것.
-   - **실천 수칙 정보 박스 (\`<div class="info-box">\`)**: 환자가 일상에서 실천할 구체적인 행동 요령이나 주의사항을 불릿 포인트(\`<ul>\`, \`<li>\`)로 정리할 것.
-4. **상우내과의원의 실질적 강점 자연스러운 융합**:
+   - 5. 상우내과의원의 특화된 임상 역량 및 계양구 주민 정기 관리 안내
+4. 필수 시각화 및 정보 요소 포함 (HTML 태그 필수 사용):
+   - 비교 분석 표 (\`<table class="post-table">\`): 최소 3~5행 이상의 표로 증상 비교, 검사 수치 기준, 단계별 차이, 또는 식이요법 권장/제한 식품표를 반드시 구성할 것 (\`<thead>\`, \`<tbody>\` 구조 준수).
+   - 전문 학회 가이드라인 콜아웃 (\`<div class="post-callout">\`): 대한신장학회(KSN), 대한소화기내시경학회, 대한당뇨병학회 등의 최신 임상 지침이나 통계 수치를 강조 박스로 삽입할 것.
+   - 실천 수칙 정보 박스 (\`<div class="info-box">\`): 환자가 일상에서 실천할 구체적인 행동 요령이나 주의사항을 불릿 포인트(\`<ul>\`, \`<li>\`)로 정리할 것.
+5. 상우내과의원의 실질적 강점 자연스러운 융합:
    - 신장내과 분과 전문의 상주 & 고효율 혈액투석 인공신장실 운영
    - 올림푸스 최상위 고해상도 내시경(OLYMPUS EVIS EXERA III CV-190) 및 당일 용종절제술(EMR)
    - 일차의료 만성질환관리 시범사업 참여 기관 & 당뇨 전담 코디네이터 상주 1:1 밀착 케어
-   - 인천 계양구 계산역 4번 출구 앞 계산메디칼센타 2층 위치
-5. **의료법 제56조 1항 철저 준수 (위반 시 법적 책임)**:
+   - 인천 계양구 경명대로 1096 계산메디칼센타 2~3층 (계산역 4번 출구 앞 60m, 도보 1분, 전용 주차장 완비)
+6. 의료법 제56조 1항 철저 준수 (위반 시 법적 책임):
    - "최고", "완치", "1등", "대학병원급" 등 비교/과장/배타적 표현 절대 금지.
    - '박상우 원장' 등 특정 의사의 개인 실명 언급 금지. 반드시 "상우내과의원", "신장내과 전문의가 상주하여" 등 기관 및 전문의 자격 중심의 대표 화자(Clinic-centric)를 사용할 것.
    - 비뇨기과, 입원실/입원치료 관련 언급 절대 금지 (외래 및 인공신장실 통원 진료 중심).
-6. **출력 형식**:
+7. 엄격한 출력 형식 (AI 작성 티 제거):
    - 오직 순수한 HTML 코드만 출력하세요. 마크다운 코드 블록(\`\`\`html 등)이나 불필요한 설명은 일절 포함하지 마세요.
-   - 마크다운 문법(\`**\`, \`*\` 등)을 본문에 절대 사용하지 마세요. 강조가 필요한 경우 반드시 \`<strong>\` 태그를 사용해야 합니다. AI가 작성한 티가 나는 \`**\` 표시는 엄격히 금지됩니다.
-   - METADATA의 title에는 ' | 상우내과의원'을 붙이지 마세요. 순수 포스트 제목만 적으세요.
+   - 마크다운 문법(\`**\`, \`*\` 등)을 본문에 절대 사용하지 마세요. 강조가 필요한 경우 반드시 \`<strong>\` 태그를 사용해야 합니다. AI가 작성한 티가 나는 마크다운 별표 표시는 엄격히 금지됩니다.
 
 # HTML 출력 템플릿:
 <!--
 METADATA:
-title: [매력적이고 신뢰도 높은 제목 (병원명 제외)]
-excerpt: [포스트 핵심을 담은 2-3문장의 완성도 높은 요약]
+title: [지역명 포함 매력적이고 신뢰도 높은 제목 (예: 계양구 계산동 당뇨 초기증상 관리법)]
+excerpt: [인천 계양구 계산역 상우내과의원 중심의 2-3문장 완성도 높은 로컬 요약]
 category: ${selected.category}
 badge: ${selected.badge}
 icon: ${selected.icon}
@@ -298,13 +302,147 @@ filename: ${filename}
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>[포스트 제목] | 상우내과의원</title>
-  <meta name="description" content="[SEO 최적화 1~2문장 요약]">
-  <meta name="keywords" content="상우내과의원, 계양구 내과, 계산동 내과, 계산역 내과, ${selected.name}, [관련키워드1], [관련키워드2]">
+  <title>[포스트 제목] | 상우내과의원 계산역 4번 출구</title>
+  <meta name="description" content="[인천 계양구 계산역 4번 출구 상우내과의원. 지역명과 핵심 의학 정보가 포함된 SEO 최적화 1~2문장 요약]">
+  <meta name="keywords" content="상우내과의원, 계양구 내과, 계산동 내과, 계산역 내과, 작전동 내과, 효성동 내과, ${selected.name}, [관련키워드1], [관련키워드2]">
   <meta name="author" content="상우내과의원">
+  
+  <!-- GEO Location Meta Tags -->
+  <meta name="geo.region" content="KR-28">
+  <meta name="geo.placename" content="인천광역시 계양구 계산동 (계산역 4번 출구)">
+  <meta name="geo.position" content="37.5432;126.7277">
+  <meta name="ICBM" content="37.5432, 126.7277">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="[포스트 제목] | 상우내과의원">
+  <meta property="og:description" content="[로컬 SEO 요약문]">
+  <meta property="og:url" content="https://sangwoo-gamma.vercel.app/blog/${filename}">
+  <link rel="canonical" href="https://sangwoo-gamma.vercel.app/blog/${filename}">
+
   <link rel="stylesheet" href="../css/style.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Structured Data (JSON-LD) for GEO & Medical SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MedicalClinic",
+        "@id": "https://sangwoo-gamma.vercel.app/#clinic",
+        "name": "상우내과의원",
+        "alternateName": ["상우내과", "계양구 상우내과", "계산역 상우내과", "계산동 상우내과"],
+        "url": "https://sangwoo-gamma.vercel.app/",
+        "logo": "https://cdn.imweb.me/upload/S202109145c6d02f1eb8c7/cc8033301742e.png",
+        "image": "https://cdn.imweb.me/upload/S202109145c6d02f1eb8c7/cc8033301742e.png",
+        "telephone": "032-551-0860",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "경명대로 1096 계산메디칼센타 2~3층",
+          "addressLocality": "계양구 계산동",
+          "addressRegion": "인천광역시",
+          "postalCode": "21013",
+          "addressCountry": "KR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 37.5432,
+          "longitude": 126.7277
+        },
+        "hasMap": "https://naver.me/5ZJMYzjj",
+        "areaServed": [
+          {"@type": "AdministrativeArea", "name": "인천광역시 계양구"},
+          {"@type": "AdministrativeArea", "name": "계산동"},
+          {"@type": "AdministrativeArea", "name": "작전동"},
+          {"@type": "AdministrativeArea", "name": "효성동"},
+          {"@type": "AdministrativeArea", "name": "임학동"},
+          {"@type": "AdministrativeArea", "name": "용종동"},
+          {"@type": "AdministrativeArea", "name": "서운동"},
+          {"@type": "AdministrativeArea", "name": "박촌동"},
+          {"@type": "AdministrativeArea", "name": "귤현동"},
+          {"@type": "AdministrativeArea", "name": "동양동"},
+          {"@type": "AdministrativeArea", "name": "장기동"},
+          {"@type": "AdministrativeArea", "name": "부평구 삼산동"},
+          {"@type": "AdministrativeArea", "name": "부평구 갈산동"}
+        ],
+        "medicalSpecialty": [
+          "InternalMedicine",
+          "Nephrology",
+          "Gastroenterology"
+        ],
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "18:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "09:00",
+            "closes": "13:00"
+          }
+        ]
+      },
+      {
+        "@type": "MedicalWebPage",
+        "@id": "https://sangwoo-gamma.vercel.app/blog/${filename}#webpage",
+        "url": "https://sangwoo-gamma.vercel.app/blog/${filename}",
+        "name": "[포스트 제목]",
+        "headline": "[포스트 제목]",
+        "description": "[로컬 SEO 요약문]",
+        "inLanguage": "ko-KR",
+        "datePublished": "PUBLISH_DATE",
+        "dateModified": "PUBLISH_DATE",
+        "mainEntityOfPage": "https://sangwoo-gamma.vercel.app/blog/${filename}",
+        "publisher": {
+          "@id": "https://sangwoo-gamma.vercel.app/#clinic"
+        },
+        "author": {
+          "@id": "https://sangwoo-gamma.vercel.app/#clinic"
+        },
+        "about": [
+          {"@type": "MedicalCondition", "name": "${selected.name}"},
+          {"@type": "AdministrativeArea", "name": "인천광역시 계양구"}
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://sangwoo-gamma.vercel.app/blog/${filename}#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "홈",
+            "item": "https://sangwoo-gamma.vercel.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "계양구 내과 건강정보",
+            "item": "https://sangwoo-gamma.vercel.app/#blog-section"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "${selected.badge}",
+            "item": "https://sangwoo-gamma.vercel.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "[포스트 제목]",
+            "item": "https://sangwoo-gamma.vercel.app/blog/${filename}"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Navigation -->
@@ -322,6 +460,15 @@ filename: ${filename}
   <main class="blog-detail-page">
     <div class="container blog-detail-container">
       <article class="blog-post-content">
+        <!-- Visual Breadcrumb Navigation -->
+        <nav class="post-breadcrumb" aria-label="breadcrumb">
+          <ol>
+            <li><a href="../index.html"><i class="fa-solid fa-house"></i> 홈</a></li>
+            <li><i class="fa-solid fa-chevron-right"></i> <a href="../index.html#blog-section">계양구 내과 칼럼</a></li>
+            <li><i class="fa-solid fa-chevron-right"></i> <span class="current-crumb">${selected.badge}</span></li>
+          </ol>
+        </nav>
+
         <div class="post-meta">
           <span class="post-category-tag">${selected.badge}</span>
           <span class="post-publish-date">작성일: <span id="publish-date">PUBLISH_DATE</span></span>
@@ -333,7 +480,7 @@ filename: ${filename}
           <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: white; flex-direction: column; text-align: center; padding: 20px;">
             <i class="${selected.icon}" style="font-size: 4.5rem; margin-bottom: 20px; opacity: 0.9;"></i>
             <span style="font-size: 1.4rem; font-weight: 800; letter-spacing: -0.5px;">[전문적이고 세련된 배너 슬로건]</span>
-            <p style="font-size: 0.95rem; opacity: 0.8; margin-top: 8px;">계양구 계산동 상우내과의원 ${selected.badge}</p>
+            <p style="font-size: 0.95rem; opacity: 0.8; margin-top: 8px;">인천 계양구 계산역 4번 출구 상우내과의원 ${selected.badge}</p>
           </div>
         </div>
         
@@ -396,8 +543,64 @@ filename: ${filename}
           <h2>4. [치료 전략 및 일상 속 관리 원칙]</h2>
           <p>[약물 치료, 식이요법, 생활습관 교정에 대한 체계적인 가이드라인 서술]</p>
 
-          <h2>5. 상우내과의원의 전문 진료 시스템</h2>
-          <p>[상우내과의원의 전문의 진료 환경 및 환자 맞춤 케어 시스템 소개와 따뜻한 당부의 말]</p>
+          <h2>5. 상우내과의원의 전문 진료 시스템과 계양구 지역 안내</h2>
+          <p>[상우내과의원의 전문의 진료 환경 및 환자 맞춤 케어 시스템, 인천 계양구 계산역 4번 출구 앞 계산메디칼센타 2~3층 위치 및 내원 편의 소개]</p>
+        </div>
+
+        <!-- GEO Clinic Location & Local Care Card -->
+        <div class="post-geo-box">
+          <div class="post-geo-header">
+            <h4 class="post-geo-title">
+              <i class="fa-solid fa-location-dot"></i> 상우내과의원 오시는 길 및 진료 안내
+            </h4>
+            <span class="post-geo-badge">계산역 4번 출구 도보 1분</span>
+          </div>
+          <div class="post-geo-body">
+            <div class="post-geo-grid">
+              <div class="post-geo-item">
+                <div class="post-geo-icon"><i class="fa-solid fa-hospital"></i></div>
+                <div class="post-geo-info">
+                  <h5>도로명 주소</h5>
+                  <p>인천 계양구 경명대로 1096 계산메디칼센타 2~3층</p>
+                </div>
+              </div>
+              <div class="post-geo-item">
+                <div class="post-geo-icon"><i class="fa-solid fa-train-subway"></i></div>
+                <div class="post-geo-info">
+                  <h5>지하철 이용</h5>
+                  <p>인천 1호선 계산역 4번 출구 바로 앞 60m</p>
+                </div>
+              </div>
+              <div class="post-geo-item">
+                <div class="post-geo-icon"><i class="fa-solid fa-square-parking"></i></div>
+                <div class="post-geo-info">
+                  <h5>주차 안내</h5>
+                  <p>계산메디칼센타 건물 내 전용 주차장 (진료 무료)</p>
+                </div>
+              </div>
+              <div class="post-geo-item">
+                <div class="post-geo-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                <div class="post-geo-info">
+                  <h5>진료 문의전화</h5>
+                  <p>외래: 032-551-0860 · 인공신장실: 032-551-0875</p>
+                </div>
+              </div>
+            </div>
+            <div class="post-geo-areas">
+              <strong><i class="fa-solid fa-map-marked-alt"></i> 주요 진료 생활권:</strong> 인천 계양구 전역(계산동, 작전동, 효성동, 임학동, 용종동, 서운동, 박촌동, 귤현동) 및 부평구 삼산동·갈산동
+            </div>
+            <div class="post-geo-actions">
+              <a href="https://naver.me/5ZJMYzjj" target="_blank" rel="noopener noreferrer" class="post-geo-btn post-geo-btn-naver">
+                <i class="fa-solid fa-map-location-dot"></i> 네이버 지도로 길찾기
+              </a>
+              <a href="tel:032-551-0860" class="post-geo-btn post-geo-btn-call">
+                <i class="fa-solid fa-phone"></i> 외래 진료 상담
+              </a>
+              <a href="tel:032-551-0875" class="post-geo-btn post-geo-btn-sub">
+                <i class="fa-solid fa-heart-pulse"></i> 인공신장실 직통
+              </a>
+            </div>
+          </div>
         </div>
 
         <div class="medical-warning-box mt-5">

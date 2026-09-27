@@ -55,8 +55,9 @@ metadata.filename = metadataMatch[7].trim();
 
 console.log("Target Draft Metadata:", metadata);
 
-// 4. Update the draft file content (replace PUBLISH_DATE placeholder)
+// 4. Update the draft file content (replace PUBLISH_DATE placeholder and sanitize markdown bold)
 draftContent = draftContent.replace(/<span id="publish-date">.*?<\/span>/, `<span id="publish-date">${todayStr}</span>`);
+draftContent = draftContent.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
 
 // Move file to blog/ directory
 const publishedPath = path.join(blogDir, metadata.filename);

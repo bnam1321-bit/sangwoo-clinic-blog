@@ -279,6 +279,7 @@ const prompt = `
    - 비뇨기과, 입원실/입원치료 관련 언급 절대 금지 (외래 및 인공신장실 통원 진료 중심).
 6. **출력 형식**:
    - 오직 순수한 HTML 코드만 출력하세요. 마크다운 코드 블록(\`\`\`html 등)이나 불필요한 설명은 일절 포함하지 마세요.
+   - 마크다운 문법(\`**\`, \`*\` 등)을 본문에 절대 사용하지 마세요. 강조가 필요한 경우 반드시 \`<strong>\` 태그를 사용해야 합니다. AI가 작성한 티가 나는 \`**\` 표시는 엄격히 금지됩니다.
    - METADATA의 title에는 ' | 상우내과의원'을 붙이지 마세요. 순수 포스트 제목만 적으세요.
 
 # HTML 출력 템플릿:
@@ -437,6 +438,8 @@ async function run() {
     
     // Clean up Markdown code blocks if any
     html = html.replace(/^```html\s*/i, '').replace(/\s*```$/i, '').trim();
+    // Convert any remaining markdown bold ** to <strong> to eliminate AI formatting artifacts
+    html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
     
     const draftsDir = path.join(__dirname, '../drafts');
     if (!fs.existsSync(draftsDir)) {

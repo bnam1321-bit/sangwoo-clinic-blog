@@ -1058,6 +1058,15 @@ h1, h2, h3, h4, h5, h6 {
   color: #475569;
 }
 
+.certificate-disclaimer {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: #64748b;
+  line-height: 1.45;
+}
+
 /* Certificate Digital Badge Card Style */
 .certificate-badge-card {
   background: #ffffff;

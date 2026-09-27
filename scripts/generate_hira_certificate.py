@@ -106,9 +106,12 @@ def create_hira_cert(cert_type="diabetes", output_path="images/sangwoo-diabetes-
         draw.text((W//2, ey), el, fill=(100, 116, 139), font=f_en, anchor="mm")
         ey += 50
 
-    # Clean bottom date and accent (no awkward fake stamp or conferral title)
-    draw.line([(W//2 - 160, 1550), (W//2 + 160, 1550)], fill=(205, 160, 55), width=2)
-    draw.text((W//2, 1625), "2025년 12월 22일", fill=(40, 55, 80), font=f_date, anchor="mm")
+    # Clean bottom date, accent, and digital notice
+    draw.line([(W//2 - 160, 1540), (W//2 + 160, 1540)], fill=(205, 160, 55), width=2)
+    draw.text((W//2, 1615), "2025년 12월 22일", fill=(40, 55, 80), font=f_date, anchor="mm")
+
+    f_notice = ImageFont.truetype("C:/Windows/Fonts/malgun.ttf", 22)
+    draw.text((W//2, 1740), "※ 본 이미지는 건강보험심사평가원의 실제 공인 평가 결과를 바탕으로 제작된 디지털 안내 이미지입니다. (공식 원본 원내 게시)", fill=(120, 135, 155), font=f_notice, anchor="mm")
 
     im.save(output_path, quality=95)
     print(f"Generated {output_path}")

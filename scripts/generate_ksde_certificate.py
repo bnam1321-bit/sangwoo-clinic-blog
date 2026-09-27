@@ -74,9 +74,12 @@ def create_clean_ksde_cert(cert_type="gastro", output_path="images/sangwoo-gastr
     draw.text((right_cx, 725), "acknowledges the above-mentioned as", fill=(50, 50, 50), font=f_body_en2, anchor="mm")
     draw.text((right_cx, 800), en_specialty, fill=(20, 20, 20), font=f_spec_en, anchor="mm")
 
-    # Bottom accent lines
+    # Bottom accent lines and digital notice
     draw.line([(W // 2 - 200, 1140), (W // 2 + 200, 1140)], fill=(195, 155, 65), width=2)
     draw.line([(W // 2 - 100, 1148), (W // 2 + 100, 1148)], fill=(195, 155, 65), width=1)
+
+    f_notice = ImageFont.truetype("C:/Windows/Fonts/malgun.ttf", 20)
+    draw.text((W // 2, 1195), "※ 본 이미지는 의료진의 실제 학회 공인 전문의 자격 사실을 바탕으로 제작된 디지털 안내 이미지입니다. (공식 자격증 원본 원내 게시)", fill=(130, 140, 155), font=f_notice, anchor="mm")
 
     im.save(output_path, quality=95)
     print(f"Generated {output_path} successfully!")

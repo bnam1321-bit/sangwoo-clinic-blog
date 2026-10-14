@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /drafts/
+Disallow: /scripts/
+
+Sitemap: https://www.sanguim.co.kr/sitemap.xml

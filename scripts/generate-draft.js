@@ -317,8 +317,8 @@ filename: ${filename}
   <meta property="og:type" content="article">
   <meta property="og:title" content="[포스트 제목] | 상우내과의원">
   <meta property="og:description" content="[로컬 SEO 요약문]">
-  <meta property="og:url" content="https://sangwoo-gamma.vercel.app/blog/${filename}">
-  <link rel="canonical" href="https://sangwoo-gamma.vercel.app/blog/${filename}">
+  <meta property="og:url" content="https://www.sanguim.co.kr/blog/${filename}">
+  <link rel="canonical" href="https://www.sanguim.co.kr/blog/${filename}">
 
   <link rel="stylesheet" href="../css/style.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
@@ -331,10 +331,10 @@ filename: ${filename}
     "@graph": [
       {
         "@type": "MedicalClinic",
-        "@id": "https://sangwoo-gamma.vercel.app/#clinic",
+        "@id": "https://www.sanguim.co.kr/#clinic",
         "name": "상우내과의원",
         "alternateName": ["상우내과", "계양구 상우내과", "계산역 상우내과", "계산동 상우내과"],
-        "url": "https://sangwoo-gamma.vercel.app/",
+        "url": "https://www.sanguim.co.kr/",
         "logo": "https://cdn.imweb.me/upload/S202109145c6d02f1eb8c7/cc8033301742e.png",
         "image": "https://cdn.imweb.me/upload/S202109145c6d02f1eb8c7/cc8033301742e.png",
         "telephone": "032-551-0860",
@@ -390,20 +390,20 @@ filename: ${filename}
       },
       {
         "@type": "MedicalWebPage",
-        "@id": "https://sangwoo-gamma.vercel.app/blog/${filename}#webpage",
-        "url": "https://sangwoo-gamma.vercel.app/blog/${filename}",
+        "@id": "https://www.sanguim.co.kr/blog/${filename}#webpage",
+        "url": "https://www.sanguim.co.kr/blog/${filename}",
         "name": "[포스트 제목]",
         "headline": "[포스트 제목]",
         "description": "[로컬 SEO 요약문]",
         "inLanguage": "ko-KR",
         "datePublished": "PUBLISH_DATE",
         "dateModified": "PUBLISH_DATE",
-        "mainEntityOfPage": "https://sangwoo-gamma.vercel.app/blog/${filename}",
+        "mainEntityOfPage": "https://www.sanguim.co.kr/blog/${filename}",
         "publisher": {
-          "@id": "https://sangwoo-gamma.vercel.app/#clinic"
+          "@id": "https://www.sanguim.co.kr/#clinic"
         },
         "author": {
-          "@id": "https://sangwoo-gamma.vercel.app/#clinic"
+          "@id": "https://www.sanguim.co.kr/#clinic"
         },
         "about": [
           {"@type": "MedicalCondition", "name": "${selected.name}"},
@@ -412,31 +412,31 @@ filename: ${filename}
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://sangwoo-gamma.vercel.app/blog/${filename}#breadcrumb",
+        "@id": "https://www.sanguim.co.kr/blog/${filename}#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "홈",
-            "item": "https://sangwoo-gamma.vercel.app/"
+            "item": "https://www.sanguim.co.kr/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "계양구 내과 건강정보",
-            "item": "https://sangwoo-gamma.vercel.app/#blog-section"
+            "item": "https://www.sanguim.co.kr/#blog-section"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "${selected.badge}",
-            "item": "https://sangwoo-gamma.vercel.app/"
+            "item": "https://www.sanguim.co.kr/"
           },
           {
             "@type": "ListItem",
             "position": 4,
             "name": "[포스트 제목]",
-            "item": "https://sangwoo-gamma.vercel.app/blog/${filename}"
+            "item": "https://www.sanguim.co.kr/blog/${filename}"
           }
         ]
       }

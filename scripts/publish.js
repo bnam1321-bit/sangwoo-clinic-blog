@@ -165,3 +165,6 @@ const rebuildSidebars = () => {
 };
 
 rebuildSidebars();
+
+// 7. Regenerate sitemap.xml / robots.txt so the new post is discoverable immediately
+require('./build-sitemap')();

@@ -7,12 +7,6 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.sanguim.co.kr/blog/gyeyang-auto-checkup-1792468012634.html</loc>
-    <lastmod>2026-10-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.sanguim.co.kr/blog/gyeyang-auto-kidney-1793249036057.html</loc>
     <lastmod>2026-10-29</lastmod>
     <changefreq>monthly</changefreq>
@@ -27,6 +21,12 @@
   <url>
     <loc>https://www.sanguim.co.kr/blog/gyeyang-auto-endoscopy-1792640239614.html</loc>
     <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.sanguim.co.kr/blog/gyeyang-auto-checkup-1792468012634.html</loc>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

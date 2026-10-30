@@ -1,6 +1,84 @@
+# 상우내과의원 공식 건강블로그 크롤러 및 AI 검색엔진 정책
 User-agent: *
 Allow: /
 Disallow: /drafts/
 Disallow: /scripts/
 
+User-agent: GPTBot
+Allow: /
+Disallow: /drafts/
+Disallow: /scripts/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /drafts/
+Disallow: /scripts/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /drafts/
+Disallow: /scripts/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /drafts/
+Disallow: /scripts/
+
+User-agent: Claude-Web
+Allow: /
+Disallow: /drafts/
+Disallow: /scripts/
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /drafts/
+Disallow: /scripts/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /drafts/
+Disallow: /scripts/
+
+User-agent: Perplexity-User
+Allow: /
+Disallow: /drafts/
+Disallow: /scripts/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /drafts/
+Disallow: /scripts/
+
+User-agent: Googlebot
+Allow: /
+Disallow: /drafts/
+Disallow: /scripts/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /drafts/
+Disallow: /scripts/
+
+User-agent: Yeti
+Allow: /
+Disallow: /drafts/
+Disallow: /scripts/
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /drafts/
+Disallow: /scripts/
+
+User-agent: Meta-ExternalAgent
+Allow: /
+Disallow: /drafts/
+Disallow: /scripts/
+
+User-agent: Amazonbot
+Allow: /
+Disallow: /drafts/
+Disallow: /scripts/
+
 Sitemap: https://www.sanguim.co.kr/sitemap.xml
+# LLMs-Txt: https://www.sanguim.co.kr/llms.txt
+# LLMs-Full-Txt: https://www.sanguim.co.kr/llms-full.txt

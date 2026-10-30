@@ -55,7 +55,12 @@ metadata.filename = metadataMatch[7].trim();
 
 console.log("Target Draft Metadata:", metadata);
 
-// 4. Update the draft file content (replace PUBLISH_DATE placeholder everywhere and sanitize markdown bold)
+// 4. Validate and update the draft file content
+if (!draftContent.includes('</html>') || !draftContent.includes('class="post-body"') || !draftContent.includes('application/ld+json')) {
+  console.error(`Draft ${targetDraftName} failed structural validation (missing </html>, .post-body, or JSON-LD). Aborting publish.`);
+  process.exit(1);
+}
+
 draftContent = draftContent.replace(/PUBLISH_DATE/g, todayStr);
 draftContent = draftContent.replace(/<span id="publish-date">.*?<\/span>/, `<span id="publish-date">${todayStr}</span>`);
 draftContent = draftContent.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');

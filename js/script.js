@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const matchesSearch = cardTitle.includes(searchQuery) || cardExcerpt.includes(searchQuery);
       
       if (matchesCategory && matchesSearch) {
-        card.style.display = 'block';
+        card.style.display = 'flex';
         card.style.opacity = '1';
         card.style.transform = 'translateY(0)';
         visibleCount++;

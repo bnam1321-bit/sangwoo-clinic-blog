@@ -148,7 +148,7 @@ const rebuildSidebars = () => {
     // Filter out current post from sidebar recommended list (keep max 5 recommendations)
     const otherPosts = posts.filter(p => p.filename !== filename).slice(0, 5);
     
-    let sidebarHtml = `          <div class="sidebar-posts-list">\n`;
+    let sidebarHtml = `<div class="sidebar-posts-list">\n`;
     otherPosts.forEach(op => {
       sidebarHtml += `            <div class="sidebar-post-item">
               <a href="${op.url}" class="sidebar-post-link">${op.title}</a>
@@ -157,9 +157,9 @@ const rebuildSidebars = () => {
     });
     sidebarHtml += `          </div>`;
 
-    const sidebarPattern = /<div class="sidebar-posts-list">[\s\S]*?<\/div>\r?\n\s*<\/div>\r?\n\s*<\/aside>/;
+    const sidebarPattern = /[ \t]*<div class="sidebar-posts-list">[\s\S]*?<\/div>\r?\n\s*<\/div>\r?\n\s*<\/aside>/;
     if (sidebarPattern.test(content)) {
-      content = content.replace(sidebarPattern, `${sidebarHtml}\n        </div>\n      </aside>`);
+      content = content.replace(sidebarPattern, `          ${sidebarHtml}\n        </div>\n      </aside>`);
       fs.writeFileSync(filePath, content, 'utf8');
     } else {
       console.log(`Warning: Could not find sidebar recommended posts container in ${filename}`);

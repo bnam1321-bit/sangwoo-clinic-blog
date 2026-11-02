@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
   <!-- Stacked JSON-LD for GEO Retrieval -->
-        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+          <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <!-- GEO Location Meta Tags -->
   <meta name="geo.region" content="KR-28">
   <meta name="geo.placename" content="인천광역시 계양구 계산동 (계산역 4번 출구)">
@@ -170,13 +170,13 @@
             "Friday"
           ],
           "opens": "09:00",
-          "closes": "18:00"
+          "closes": "19:00"
         },
         {
           "@type": "OpeningHoursSpecification",
           "dayOfWeek": "Saturday",
           "opens": "09:00",
-          "closes": "13:00"
+          "closes": "14:00"
         }
       ]
     },
@@ -245,7 +245,7 @@
           "name": "인천 계양구 계산역 인근에서 위·대장내시경 진료를 받으려면 상우내과의원에 어떻게 방문하나요?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "상우내과의원은 인천광역시 계양구 경명대로 1096 계산메디칼센타 2~3층(인천 1호선 계산역 4번 출구 도보 1분, 60m 앞)에 위치해 있습니다. 건물 내 전용 주차장을 무료로 이용할 수 있으며, 평일 09:00~18:00, 토요일 09:00~13:00 진료합니다. 외래 및 검진 문의는 032-551-0860, 인공신장실(혈액투석) 직통 문의는 032-551-0875입니다."
+            "text": "상우내과의원은 인천광역시 계양구 경명대로 1096 계산메디칼센타 2~3층(인천 1호선 계산역 4번 출구 도보 1분, 60m 앞, 지번: 계산동 880)에 위치해 있습니다. 건물 내 전용 주차장을 무료로 이용할 수 있으며, 평일 09:00~19:00(점심시간 13:00~14:00), 토요일 09:00~14:00(점심시간 없음), 공휴일 09:00~13:00 진료합니다(일요일 휴진). 외래 및 검진 문의는 032-551-0860, 인공신장실(혈액투석) 직통 문의는 032-551-0875입니다."
           }
         }
       ]
@@ -286,11 +286,12 @@
 </head>
 <body>
 
-  <!-- Header -->
+    <!-- Header -->
+    <!-- Header -->
   <header class="site-header">
     <div class="container header-container">
       <a href="../index.html" class="logo-link">
-        <h1 class="logo-text">상우내과의원<span>건강블로그</span></h1>
+        <div class="logo-text">상우내과의원<span>건강블로그</span></div>
       </a>
       <nav class="main-nav">
         <a href="../index.html" class="nav-link">건강정보</a>
@@ -299,6 +300,11 @@
           <i class="fa-solid fa-house"></i> 병원 홈페이지
         </a>
       </nav>
+      <button class="menu-toggle" aria-label="메뉴 열기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
 
@@ -403,9 +409,8 @@
               <li>3. Clinical practice guidelines for colonoscopy screening and surveillance - Korean Cancer Association, 2018.</li>
             </ul>
           </div>
+        </div>
 
-          <!-- Medical Warning Legal Box -->
-          
         <!-- GEO Clinic Location & Local Care Card -->
         <div class="post-geo-box">
           <div class="post-geo-header">
@@ -462,57 +467,32 @@
           </div>
         </div>
 
-        <div class="medical-warning-box">
-            💡 <strong>진료 안내 및 주의사항</strong> 본 게시물은 의료법 제56조 1항을 준수하여 의료 정보 제공 목적으로 작성되었습니다. 제공된 의학 정보는 환자의 상태 및 체질에 따라 진료 결과가 다를 수 있으며, 부작용이 발생할 수 있으므로 검사·시술 전 반드시 내과 전문의와 충분한 상담을 진행하시기 바랍니다.
-          </div>
-
-          <div class="post-cta-widget">
-            <h3>🏥 계산동 상우내과의원 소화기내시경 센터 진료 문의</h3>
-            <p>
-              본원 소화기내시경 센터는 풍부한 용종 절제 시술 건수를 보유한 내과 전문의가 세심한 마취 관리 하에 직접 위·대장 검진을 책임지고 시행합니다. 대장 약 복용이 힘드신 분들을 위한 알약 형태 장정결제 처방 등 편리한 대안도 제공되오니 아래 번호로 문의해 주십시오.
-            </p>
-            <div class="post-cta-buttons">
-              <a href="tel:032-551-0860" class="btn btn-primary">
-                <i class="fa-solid fa-phone"></i> 대표 예약 문의: 032-551-0860
-              </a>
-              <a href="https://naver.me/5ZJMYzjj" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                <i class="fa-solid fa-location-dot"></i> 계산역 4번 출구 앞 오시는 길
-              </a>
-            </div>
-          </div>
+        <div class="medical-warning-box mt-5">
+          <p>
+            <strong>💡 의료법 제56조 1항에 따른 안내</strong><br>
+            본 포스팅의 모든 내용은 상우내과의원에서 직접 작성하였습니다. 제공되는 건강 정보는 일반적인 의학적 지식이며 개별 환자의 특성에 따라 차이가 있을 수 있으므로, 정확한 진단과 치료를 위해서는 반드시 내원하여 진료를 받으시길 바랍니다.
+          </p>
         </div>
       </article>
       
       <!-- Right Column: Sidebar -->
       <aside class="blog-sidebar">
-        <!-- Clinic Information Card -->
+        <!-- Clinic Info Card -->
         <div class="sidebar-card">
-          <h4 class="sidebar-title">상우내과의원 안내</h4>
+          <h4 class="sidebar-title">상우내과의원 진료 안내</h4>
           <ul class="sidebar-info-list">
-            <li>
-              <strong>대표전화</strong>
-              032-551-0860<br>
-              <strong>인공신장실 직통</strong>
-              032-551-0875
-            </li>
-            <li>
-              <strong>진료 시간</strong>
-              평일: 09:00 ~ 19:00<br>
-              토요일: 09:00 ~ 14:00<br>
-              공휴일: 09:00 ~ 13:00<br>
-              (일요일은 휴진입니다)
-            </li>
-            <li>
-              <strong>병원 위치</strong>
-              인천 계양구 계산역 4번 출구 앞 계산메디칼센타 2층(외래), 3층(인공신장실)
-            </li>
+            <li><i class="fa-solid fa-clock"></i><div><strong>평일 진료</strong> 09:00 - 19:00 (점심 13:00-14:00)</div></li>
+            <li><i class="fa-regular fa-calendar-check"></i><div><strong>토요일 진료</strong> 09:00 - 14:00 (점심시간 없음)</div></li>
+            <li><i class="fa-solid fa-calendar-day"></i><div><strong>공휴일 진료</strong> 09:00 - 13:00 (일요일 휴진)</div></li>
+            <li><i class="fa-solid fa-phone-volume"></i><div><strong>외래 예약·문의</strong> 032-551-0860</div></li>
+            <li><i class="fa-solid fa-heart-pulse"></i><div><strong>인공신장실 직통</strong> 032-551-0875</div></li>
+            <li><i class="fa-solid fa-location-dot"></i><div><strong>오시는 길</strong> 인천 계양구 경명대로 1096 계산메디칼센타 2~3층 (계산역 4번 출구 60m)</div></li>
           </ul>
         </div>
-
         <!-- Other Blog Posts Card -->
         <div class="sidebar-card">
           <h4 class="sidebar-title">추천 건강 정보</h4>
-                                                                                                                                                                                                                                                                                                                                                                                                                                    <div class="sidebar-posts-list">
+          <div class="sidebar-posts-list">
             <div class="sidebar-post-item">
               <a href="./gyeyang-auto-kidney-1793249036057.html" class="sidebar-post-link">계양구 계산동 신장내과: 소변 검사에서 단백뇨와 혈뇨가 검출되었을 때 의심할 수 있는 신장 질환</a>
               <span class="sidebar-post-date">2026-10-29</span>
@@ -547,7 +527,7 @@
         <div class="footer-about">
           <div class="footer-logo">상우내과의원 <span>건강블로그</span></div>
           <p>
-            상우내과의원은 2012년 개원 이래, 계양구 주민들의 주치의로서 콩팥 건강(투석 치료)과 소화기내시경, 건강검진을 전담하며 사랑받아 왔습니다. 앞으로도 환자 한 분 한 분을 위해 정성을 다해 진료하겠습니다.
+            상우내과의원은 2012년 개원 이래 인천 계양구 주민들의 주치의로서 신장내과(인공신장실 혈액투석), 소화기내시경(수면 위·대장내시경 및 당일 용종절제술), 고혈압·당뇨 1등급 만성질환 클리닉, 국가건강검진을 전담하며 정성을 다해 진료하고 있습니다.
           </p>
         </div>
         <div>
@@ -556,15 +536,15 @@
             <li><a href="./gyeyang-hemodialysis-center.html">인공신장실 / 혈액투석</a></li>
             <li><a href="./gyeyang-endoscopy-polypectomy.html">위·대장내시경 검사</a></li>
             <li><a href="./gyeyang-health-checkup-guide.html">국가건강검진 전날 주의사항</a></li>
-            <li><a href="./gyeyang-chronic-disease-hypertension-diabetes.html">고혈압 & 당뇨병 관리</a></li>
+            <li><a href="./gyeyang-chronic-disease-hypertension-diabetes.html">고혈압 &amp; 당뇨병 관리</a></li>
           </ul>
         </div>
         <div>
-          <h4 class="footer-title">진료문의</h4>
+          <h4 class="footer-title">진료문의 및 오시는 길</h4>
           <div class="footer-contact-info">
-            <p><i class="fa-solid fa-phone"></i> 대표: 032-551-0860</p>
-            <p><i class="fa-solid fa-hospital-user"></i> 인공신장실: 032-551-0875</p>
-            <p><i class="fa-solid fa-map-location-dot"></i> 계산역 4번 출구 60m 앞</p>
+            <p><i class="fa-solid fa-phone"></i> 외래 대표: 032-551-0860</p>
+            <p><i class="fa-solid fa-heart-pulse"></i> 인공신장실: 032-551-0875</p>
+            <p><i class="fa-solid fa-map-location-dot"></i> 인천 계양구 경명대로 1096 계산메디칼센타 2~3층 (계산역 4번 출구 60m 앞)</p>
           </div>
         </div>
       </div>
@@ -581,7 +561,7 @@
     </div>
   </footer>
 
-  <!-- Floating Action Buttons -->
+  <!-- Floating Call Action Buttons -->
   <div class="floating-actions">
     <a href="https://naver.me/5ZJMYzjj" target="_blank" rel="noopener noreferrer" class="floating-btn" title="오시는 길 지도">
       <i class="fa-solid fa-location-dot"></i>
@@ -591,5 +571,6 @@
     </a>
   </div>
 
+  <script src="../js/script.js"></script>
 </body>
 </html>
